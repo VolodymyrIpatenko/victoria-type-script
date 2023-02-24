@@ -65,6 +65,7 @@ export const ProductsGalleryItem = styled.li`
   width: 200px;
   @media screen and (min-width: 1199px) {
     width: 300px;
+    transition: 1s linear;
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
@@ -74,5 +75,8 @@ export const ProductsGalleryItem = styled.li`
       rgba(212, 128, 0, 1) 100%,
       rgba(238, 130, 238, 1) 100%
     );
+  }
+  &:hover {
+    transform: scale(1.1);
   }
 `;
