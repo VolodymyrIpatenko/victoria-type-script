@@ -1,10 +1,11 @@
 
-import React, { useState, useContext, FormEvent, ChangeEvent } from 'react';
+import React, { useState, useContext, ChangeEvent } from 'react';
 import Modal from '../modal/Modal';
 import emailjs from 'emailjs-com';
 import validator from 'validator';
 import { DarkModeContext } from '../context/DarkModeContext';
-import { useToggle, useInput } from '../customHooks/customHooks';
+import { useToggle} from '../customHooks/customHooks';
+import "../modal/Modal.css";
 import {
   MyForm,
   ButtonSubmit,
@@ -16,26 +17,35 @@ import {
 
 const Contacts: React.FC = () => {
   const { darkMode } = useContext(DarkModeContext);
-  const [name, setName] = useInput();
+  const [data, setUserData] = useState({
+    name: "",
+    message: "",
+  });
   const [email, setEmailError] = useState('');
-  const [message, setMessage] = useInput();
   const [phone, setPhoneNumber] = useState('');
   const [isModalOpen, setModalOpen] = useToggle();
+
+  const { message, name } = data;
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  setUserData((prevState) => ({ ...prevState, [e.target.name]: e.target.value }));
+};
+
 
   const values =
     name === '' ||
     email === '' ||
     phone === '' ||
     message === '' ||
-    email !== 'Valid Email :)';
+    email !== 'Правильно';
 
   const validateEmail = (e: ChangeEvent<HTMLInputElement>) => {
     const email = e.target.value;
 
     if (validator.isEmail(email)) {
-      setEmailError('Valid Email :)');
+      setEmailError('Правильно');
     } else {
-      setEmailError('Enter valid Email!');
+      setEmailError('Будь-ласка правильний email');
     }
   };
 
@@ -81,7 +91,7 @@ const Contacts: React.FC = () => {
               <Input
                 type="text"
                 placeholder="Ваше ім'я"
-                onChange={setName}
+                onChange={handleChange}
                 name="name"
               />
             </LabelText>
@@ -118,7 +128,7 @@ const Contacts: React.FC = () => {
               <p>Повідомлення</p>
               <Textarea
                 placeholder="Напишіть своє повідомлення"
-                onChange={setMessage}
+                onChange={handleChange}
                 name="message"
               />
             </LabelText>
@@ -129,7 +139,11 @@ const Contacts: React.FC = () => {
             >
               {values ? 'Заповніть поля' : 'Відправити'}
             </ButtonSubmit>
-            {isModalOpen ? <Modal /> : null}
+            {isModalOpen ? <Modal>
+              <div className="modal" onClick={e => e.stopPropagation()}>
+               <p>Дякуємо!В найближчий час ми з вами зв'яжемося.</p>
+              </div>
+          </Modal> : null}
           </MyForm>
         </FormWrapper>
       </div>

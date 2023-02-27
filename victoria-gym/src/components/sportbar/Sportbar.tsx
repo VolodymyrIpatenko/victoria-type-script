@@ -2,6 +2,9 @@ import React, { useState, useContext } from 'react';
 import Menu from './data';
 import { CategoryButton, ProductsVariety, ProductsGallery, ProductsGalleryItem, StyledPrice, SportbarMain, ProductCard } from './GalleryFilter.styled';
 import { DarkModeContext } from '../context/DarkModeContext';
+import { nanoid } from "nanoid";
+
+const id = nanoid();
 
 type ProductsData = {
   image: string,
@@ -34,8 +37,8 @@ const GalleryReact: React.FC = () => {
 
   const Buttons: React.FC = () => (
     <ProductsVariety>
-      {buttons.map((button, index) => (
-        <li key={index}>
+      {buttons.map((button) => (
+        <li key={id}>
           <CategoryButton onClick={() => filterItem(button)}>{button}</CategoryButton>
         </li>
       ))}
@@ -48,8 +51,8 @@ const GalleryReact: React.FC = () => {
       <section>
         <Buttons />
         <ProductsGallery>
-          {items.map(({ image, price, description }, index) => (
-            <ProductsGalleryItem key={index}>
+          {items.map(({ image, price, description }) => (
+            <ProductsGalleryItem key={id}>
               <img src={image} alt={description} />
               <ProductCard>
                 <StyledPrice>{price}</StyledPrice>

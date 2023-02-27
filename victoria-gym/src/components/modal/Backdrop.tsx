@@ -6,7 +6,7 @@ interface BackdropProps {
   children: ReactNode;
 }
 
-const Backdrop:React.FC<BackdropProps> = ({ children }) => {
+const Backdrop = ({ children }:BackdropProps) => {
   return ReactDOM.createPortal(
     <div className="backdrop">{children}</div>,
     document.getElementById('portal') as Element

@@ -8,7 +8,7 @@ const PageFooter = () => {
         <LogoImg src={require('../images/logo.jpg')} alt="logo" />
       </a>
       <MailLink href="mailto:sport_club_victoria@gmail.com">
-        sport_club_victoria@gmail.com
+        sportzalviktoria@gmail.com
       </MailLink>
     </Footer>
   );

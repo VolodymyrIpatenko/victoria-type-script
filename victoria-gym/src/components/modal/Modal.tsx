@@ -1,13 +1,16 @@
 import React from 'react';
 import Backdrop from './Backdrop';
 import './Modal.css';
+import { ReactNode } from 'react';
 
-const Modal:React.FC=() =>{
+interface ModalProps {
+  children: ReactNode,
+}
+
+const Modal=({children}:ModalProps) =>{
   return (
     <Backdrop>
-      <div className="modal" onClick={e => e.stopPropagation()}>
-        <p>Дякуємо!В найближчий час ми з вами зв'яжемося.</p>
-      </div>
+      {children}
     </Backdrop>
   );
 }
