@@ -1,0 +1,100 @@
+.myImg {
+  margin: 2.5vw;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myImg:hover {
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.8);
+  /* border: 0.5vw solid white; */
+  /* transform: scale(1.2); */
+}
+
+/* The Modal (background) */
+.img-modal {
+  display: grid;
+  place-content: center;
+  width: 50%;
+  height: 50%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  color: #ccc;
+}
+
+/* Add Animation - Zoom in the Modal */
+
+#caption {
+  animation-name: zoom;
+  animation-duration: 2s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.x-close {
+  position: absolute;
+  top: 15vh;
+  right: 5vh;
+  color: #f1f1f1;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    color: greenyellow;
+  }
+}
+
+.x-close:hover,
+.x-close:focus {
+  animation: 1s spin;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (min-width: 535px) {
+  .myImg {
+    width: 60%;
+    height: 25%;
+    margin: 20px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .modal-content {
+    width: 500px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .myImg {
+    width: 25%;
+    height: 35%;
+    margin: 5px;
+  }
+}

@@ -6,7 +6,7 @@ const Menu = [
     category: 'Гейнер',
     price: '₴ 55',
     description: 'Гейнер Scitec Nutrition Jumbo',
-    id: 1,
+    id: 0,
   },
   {
     image: 'https://volodymyripatenko.github.io/victoria-react/geyner.jpg',
@@ -14,7 +14,7 @@ const Menu = [
     category: 'Гейнер',
     price: '₴ 55',
     description: 'Яловичиний гейнер 100% BeefMuscle',
-    id: 2,
+    id: 1,
   },
   {
     image: 'https://volodymyripatenko.github.io/victoria-react/multipower.jpg',
@@ -22,7 +22,7 @@ const Menu = [
     category: 'Протеїнові коктейлі',
     price: '₴ 60',
     description: '100% PURE WHEY PROTEIN',
-    id: 3,
+    id: 2,
   },
   {
     image:
@@ -31,7 +31,7 @@ const Menu = [
     category: 'Предтреніки',
     price: '₴ 35',
     description: 'WORK IT LADY',
-    id: 4,
+    id: 3,
   },
   {
     image:
@@ -41,7 +41,7 @@ const Menu = [
     price: '₴ 45',
     description:
       'Горіховий батончик Power Pro 36%.В батончиках міститься: 36% протеїну',
-    id: 5,
+    id: 4,
   },
 
   {
@@ -50,7 +50,7 @@ const Menu = [
     category: 'Карнітин',
     price: '₴ 30',
     description: 'Genius Nutrition iCarnitine',
-    id: 6,
+    id: 5,
   },
   {
     image:
@@ -60,7 +60,7 @@ const Menu = [
     price: '₴ 45',
     description:
       'Zero Crunch 40% Protein Високий вміст білка 40% ідеально доповнює раціон',
-    id: 7,
+    id: 6,
   },
   {
     image: 'https://volodymyripatenko.github.io/victoria-react/zero-one.jpg',
@@ -69,7 +69,7 @@ const Menu = [
     price: '₴ 45',
     description:
       'Протеїнові батончики торгової марки Sporter.Високий вміст білка (32%).Не містить пальмового жиру',
-    id: 8,
+    id: 7,
   },
 
   {
@@ -79,7 +79,7 @@ const Menu = [
     category: 'Амінокислоти',
     price: '₴ 35',
     description: 'Essential AMIN.O.  Energy від Optimum Nutrition',
-    id: 9,
+    id: 8,
   },
   {
     image:
@@ -88,7 +88,7 @@ const Menu = [
     category: 'Амінокислоти',
     price: '₴ 35',
     description: 'Essential AMIN.O.  Energy від Optimum Nutrition',
-    id: 10,
+    id: 9,
   },
   {
     image:
@@ -97,7 +97,7 @@ const Menu = [
     category: 'Амінокислоти',
     price: '₴ 35',
     description: 'Essential AMIN.O.  Energy від Optimum Nutrition ',
-    id: 11,
+    id: 10,
   },
   {
     image:
@@ -106,7 +106,7 @@ const Menu = [
     category: 'Амінокислоти',
     price: '₴ 35',
     description: 'Essential AMIN.O.  Energy від Optimum Nutrition',
-    id: 12,
+    id: 11,
   },
 
   {
@@ -116,7 +116,7 @@ const Menu = [
     category: 'Амінокислоти',
     price: '₴ 20',
     description: '',
-    id: 13,
+    id: 12,
   },
   {
     image:
@@ -125,7 +125,7 @@ const Menu = [
     category: 'Батончики',
     price: '₴ 45',
     description: 'Батончик Power Pro 36%.В батончиках міститься: 36% протеїну',
-    id: 14,
+    id: 13,
   },
 
   {
@@ -134,7 +134,7 @@ const Menu = [
     category: 'Батончики',
     price: '₴ 45',
     description: 'Батончик Power Pro 36%.В батончиках міститься: 36% протеїну',
-    id: 15,
+    id: 14,
   },
   {
     image:
@@ -142,7 +142,7 @@ const Menu = [
     name: 'Maggi',
     category: 'Батончики',
     price: '₴ 45',
-    id: 16,
+    id: 15,
     description: 'Батончик Zero One 32%.В батончиках міститься: 32% протеїну',
   },
   {
@@ -151,7 +151,7 @@ const Menu = [
     name: 'Maggi',
     category: 'Батончики',
     price: '₴ 45',
-    id: 17,
+    id: 16,
     description: 'Батончик Zero One 32%.В батончиках міститься: 32% протеїну',
   },
   {
@@ -160,7 +160,7 @@ const Menu = [
     name: 'Maggi',
     category: 'Батончики',
     price: '₴ 45',
-    id: 18,
+    id: 17,
     description: 'Батончик Zero One 32%.В батончиках міститься: 32% протеїну',
   },
   {
@@ -169,7 +169,7 @@ const Menu = [
     name: 'Maggi',
     category: 'Батончики',
     price: '₴ 45',
-    id: 19,
+    id: 18,
     description: 'Батончик Zero One 32%.В батончиках міститься: 32% протеїну',
   },
   {
@@ -178,7 +178,7 @@ const Menu = [
     name: 'Maggi',
     category: 'Батончики',
     price: '₴ 45',
-    id: 20,
+    id: 19,
     description: 'Батончик Zero One 32%.В батончиках міститься: 32% протеїну',
   },
   {
@@ -187,7 +187,7 @@ const Menu = [
     name: 'Maggi',
     category: 'Предтреніки',
     price: '₴ 35',
-    id: 21,
+    id: 20,
     description: 'Genius Nutrition Warcry',
   },
   {
@@ -196,7 +196,7 @@ const Menu = [
     name: 'Maggi',
     category: 'Протеїнові коктейлі',
     price: '₴ 60',
-    id: 22,
+    id: 21,
     description:
       '100% Whey Protein Professional Scitec Nutrition - Вишуканий концентрат ультра фільтрованого сироваткового білка.',
   },
