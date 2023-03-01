@@ -36,6 +36,7 @@ export const ProductsGallery = styled.ul`
   display: grid;
   justify-content: center;
   margin: 50px;
+  gap: 70px;
 
   @media screen and (min-width: 1199px) {
     display: grid;
@@ -50,7 +51,6 @@ export const ProductsGallery = styled.ul`
 export const StyledPrice = styled.p`
   font-size: 20px;
   text-align: center;
-  color: white;
 `;
 
 export const ProductCard = styled.div`
@@ -59,10 +59,12 @@ export const ProductCard = styled.div`
   padding: 10px;
   font-size: 18px;
   height: 120px;
+  margin-top: 40px;
 `;
 
 export const ProductsGalleryItem = styled.li`
   width: 200px;
+
   @media screen and (min-width: 1199px) {
     width: 300px;
     transition: 1s linear;
