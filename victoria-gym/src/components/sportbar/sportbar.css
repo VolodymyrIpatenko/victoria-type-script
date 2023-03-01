@@ -44,7 +44,7 @@
 
 .x-close {
   position: absolute;
-  top: 15vh;
+  top: 25vh;
   right: 5vh;
   color: #f1f1f1;
   font-size: 2rem;
@@ -76,9 +76,13 @@
   }
 }
 
+.modal-content {
+  width: 300px;
+}
+
 @media only screen and (min-width: 700px) {
   .modal-content {
-    width: 500px;
+    max-width: 400px;
     position: relative;
     z-index: 1;
   }
