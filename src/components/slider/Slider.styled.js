@@ -8,11 +8,11 @@ export const Wrraper = styled.section`
   font-weight:bold;
   text-align:center;
   color:white;
+   background-image:url("https://volodymyripatenko.github.io/victoria-react/slider.jpg");
   }
   @media screen and (min-width: 1199px) {
     width: 1300px !important;
     height:300px;
     padding:70px;
-    background-image:url("https://volodymyripatenko.github.io/victoria-react/slider.jpg");
   }
 `;

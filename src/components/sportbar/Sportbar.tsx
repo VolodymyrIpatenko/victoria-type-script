@@ -7,8 +7,9 @@ import ButtonsList from './Buttons';
 import {ModalContent,CloseButton,Caption} from "./SportbarModal.styled"
 import type ProductsData from "@entities/SportBarData"
 import "./SportbarModal.styled.js";
+import { v4 as uuid } from 'uuid';
 
-
+const id = uuid();
 
 const GalleryReact: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -39,7 +40,7 @@ const GalleryReact: React.FC = () => {
 
 function ImageModal({ imageObj, handleClose }: ImageModalProps): JSX.Element {
   return (
-    <Modal>
+    <Modal key={id}>
       <CloseButton onClick={handleClose}>
         &times;
       </CloseButton>

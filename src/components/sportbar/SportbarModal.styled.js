@@ -29,7 +29,7 @@ export const Caption = styled.span`
 
 export const CloseButton = styled.span`
   position: absolute;
-  top: 25vh;
+  top: 30vh;
   right: 3vh;
   color: #f1f1f1;
   font-size: 2rem;
@@ -45,11 +45,12 @@ export const CloseButton = styled.span`
 `;
 
 export const ModalContent = styled.img`
-  @media only screen and (min-width: 700px) {
+  width: 350px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  animation: ${zoom} 2s;
+  @media screen and (min-width: 1199px) {
     width: 450px;
-    margin: auto;
-    position: relative;
-    z-index: 1;
-    animation: ${zoom} 2s;
   }
 `;

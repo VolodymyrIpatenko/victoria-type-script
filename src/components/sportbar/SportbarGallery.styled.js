@@ -55,10 +55,12 @@ export const ProductCard = styled.div`
   padding-bottom: 10px;
   margin-top: 20px;
   text-align: center;
+  border-radius: 5px;
   font-size: 18px;
 `;
 
 export const ProductsGalleryItem = styled.li`
+  background-color: #fc060e;
   width: 200px;
   @media screen and (min-width: 1199px) {
     width: 300px;
@@ -66,7 +68,6 @@ export const ProductsGalleryItem = styled.li`
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #fc060e;
   }
   &:hover {
     transform: scale(1.1);

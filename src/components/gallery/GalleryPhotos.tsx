@@ -6,8 +6,7 @@ import type GalleryData from '@entities/GalleryData';
 
 const GalleryPhotosComponent = () => {
 	const [data, setData] = useState<GalleryData[]>(mainGallery);
-
-	    return (
+    return (
 	       <>
 		     {data.map(({photo,alt}) => {
               return (

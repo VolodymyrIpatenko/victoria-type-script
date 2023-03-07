@@ -2,7 +2,6 @@ const Menu = [
   {
     image:
       'https://volodymyripatenko.github.io/victoria-react/second-geyner.jpg',
-    name: 'Maggi',
     category: 'Гейнер',
     price: '₴ 55',
     description: 'Гейнер Scitec Nutrition Jumbo',
@@ -10,7 +9,6 @@ const Menu = [
   },
   {
     image: 'https://volodymyripatenko.github.io/victoria-react/geyner.jpg',
-    name: 'Maggi',
     category: 'Гейнер',
     price: '₴ 55',
     description: 'Яловичиний гейнер 100% BeefMuscle',
@@ -18,7 +16,6 @@ const Menu = [
   },
   {
     image: 'https://volodymyripatenko.github.io/victoria-react/multipower.jpg',
-    name: 'Maggi',
     category: 'Протеїнові коктейлі',
     price: '₴ 60',
     description: '100% PURE WHEY PROTEIN',
@@ -27,7 +24,7 @@ const Menu = [
   {
     image:
       'https://volodymyripatenko.github.io/victoria-react/second-pred-tren.jpg',
-    name: 'Aloo Paratha',
+
     category: 'Предтреніки',
     price: '₴ 35',
     description: 'WORK IT LADY',
@@ -36,7 +33,6 @@ const Menu = [
   {
     image:
       'https://volodymyripatenko.github.io/victoria-react/second-power-pro-new.jpg',
-    name: 'Maggi',
     category: 'Батончики',
     price: '₴ 45',
     description:
@@ -46,7 +42,6 @@ const Menu = [
 
   {
     image: 'https://volodymyripatenko.github.io/victoria-react/amino.jpg',
-    name: 'Maggi',
     category: 'Карнітин',
     price: '₴ 30',
     description: 'Genius Nutrition iCarnitine',
@@ -68,14 +63,13 @@ const Menu = [
     category: 'Батончики',
     price: '₴ 45',
     description:
-      'Протеїнові батончики торгової марки Sporter.Високий вміст білка (32%).Не містить пальмового жиру',
+      'Протеїнові батончики торгової марки Sporter.Високий вміст білка (32%)',
     id: 7,
   },
 
   {
     image:
       'https://volodymyripatenko.github.io/victoria-react/newBar/amino-first.jpeg',
-    name: 'Maggi',
     category: 'Амінокислоти',
     price: '₴ 35',
     description: 'Essential AMIN.O.  Energy від Optimum Nutrition',
@@ -84,7 +78,6 @@ const Menu = [
   {
     image:
       'https://volodymyripatenko.github.io/victoria-react/newBar/amino-second.jpeg',
-    name: 'Maggi',
     category: 'Амінокислоти',
     price: '₴ 35',
     description: 'Essential AMIN.O.  Energy від Optimum Nutrition',
@@ -130,7 +123,7 @@ const Menu = [
 
   {
     image: 'https://volodymyripatenko.github.io/victoria-react/newBar/pro.jpeg',
-    name: 'Maggi',
+
     category: 'Батончики',
     price: '₴ 45',
     description: 'Батончик Power Pro 36%.В батончиках міститься: 36% протеїну',
@@ -139,7 +132,7 @@ const Menu = [
   {
     image:
       'https://volodymyripatenko.github.io/victoria-react/newBar/zero-fifth.jpeg',
-    name: 'Maggi',
+
     category: 'Батончики',
     price: '₴ 45',
     id: 15,
@@ -148,7 +141,7 @@ const Menu = [
   {
     image:
       'https://volodymyripatenko.github.io/victoria-react/newBar/zero-first.jpeg',
-    name: 'Maggi',
+
     category: 'Батончики',
     price: '₴ 45',
     id: 16,
@@ -157,7 +150,7 @@ const Menu = [
   {
     image:
       'https://volodymyripatenko.github.io/victoria-react/newBar/zero-fourth.jpeg',
-    name: 'Maggi',
+
     category: 'Батончики',
     price: '₴ 45',
     id: 17,
@@ -166,7 +159,7 @@ const Menu = [
   {
     image:
       'https://volodymyripatenko.github.io/victoria-react/newBar/zero-second.jpeg',
-    name: 'Maggi',
+
     category: 'Батончики',
     price: '₴ 45',
     id: 18,
@@ -175,7 +168,7 @@ const Menu = [
   {
     image:
       'https://volodymyripatenko.github.io/victoria-react/newBar/zero-sixth.jpeg',
-    name: 'Maggi',
+
     category: 'Батончики',
     price: '₴ 45',
     id: 19,
@@ -184,7 +177,7 @@ const Menu = [
   {
     image:
       'https://volodymyripatenko.github.io/victoria-react/newBar/pred-tren.jpeg',
-    name: 'Maggi',
+
     category: 'Предтреніки',
     price: '₴ 35',
     id: 20,
@@ -193,12 +186,10 @@ const Menu = [
   {
     image:
       'https://volodymyripatenko.github.io/victoria-react/newBar/scitec-prot.jpeg',
-    name: 'Maggi',
     category: 'Протеїнові коктейлі',
     price: '₴ 60',
     id: 21,
-    description:
-      '100% Whey Protein Professional Scitec Nutrition - Вишуканий концентрат ультра фільтрованого сироваткового білка.',
+    description: '100% Whey Protein Professional Scitec Nutrition',
   },
 ];
 

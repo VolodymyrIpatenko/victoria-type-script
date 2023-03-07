@@ -8,7 +8,7 @@ interface Social {
   component: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
 }
 
-export const socialsList: Social[] = [
+ const socialsList: Social[] = [
   {
     id: 1,
     path: 'https://www.instagram.com/sport_club_victoria/',
