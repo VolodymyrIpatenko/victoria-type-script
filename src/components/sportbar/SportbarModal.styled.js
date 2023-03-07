@@ -45,7 +45,7 @@ export const CloseButton = styled.span`
 `;
 
 export const ModalContent = styled.img`
-  width: 350px;
+  width: 300px;
   margin: auto;
   position: relative;
   z-index: 1;
