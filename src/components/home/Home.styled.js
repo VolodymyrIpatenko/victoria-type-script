@@ -21,7 +21,6 @@ export const Description = styled.p`
 
 export const Coaches = styled.ul`
   display: grid;
-  gap: 200px;
   @media screen and (min-width: 1199px) {
     display: grid;
     gap: 20px;
