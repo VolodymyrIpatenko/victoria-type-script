@@ -1,4 +1,4 @@
-import { ProductsVariety, CategoryButton } from "./SportbarGallery.styled";
+import { ProductsVariety, CategoryButton } from './SportbarGallery.styled';
 import { v4 as uuid } from 'uuid';
 
 const id = uuid();
@@ -8,8 +8,8 @@ interface Props {
   filterItem: FilterItem;
 }
 
-const ButtonsList = ({filterItem}:Props) => {
-	const buttons = [
+const ButtonsList = ({ filterItem }: Props) => {
+  const buttons = [
     'Амінокислоти',
     'Батончики',
     'Гейнер',
@@ -17,17 +17,17 @@ const ButtonsList = ({filterItem}:Props) => {
     'Карнітин',
     'Все',
     'Протеїнові коктейлі',
-	];
-	
-	return (
+  ];
+
+  return (
     <ProductsVariety>
-      {buttons.map((button) => (
+      {buttons.map(button => (
         <li key={id}>
           <CategoryButton onClick={() => filterItem(button)}>{button}</CategoryButton>
         </li>
       ))}
     </ProductsVariety>
   );
-}
+};
 
 export default ButtonsList;
