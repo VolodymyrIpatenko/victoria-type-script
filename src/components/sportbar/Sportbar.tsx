@@ -7,14 +7,10 @@ import {
   ProductCard,
 } from './SportbarGallery.styled';
 import { DarkModeContext } from '../context/DarkModeContext';
-import Modal from '../modal/Modal';
 import ButtonsList from './Buttons';
-import { ModalContent, CloseButton, Caption } from './SportbarModal.styled';
 import type ProductsData from '@entities/SportBarData';
 import './SportbarModal.styled.js';
-import { v4 as uuid } from 'uuid';
-
-const id = uuid();
+import ImageModal from './ImgModal';
 
 const GalleryReact: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -36,23 +32,6 @@ const GalleryReact: React.FC = () => {
     const updatedItems = Menu.filter(({ category }) => category === categItem);
     setItems(updatedItems);
   };
-
-  interface ImageModalProps {
-    imageObj: ProductsData;
-    handleClose: () => void;
-  }
-
-  function ImageModal({ imageObj, handleClose }: ImageModalProps): JSX.Element {
-    return (
-      <Modal key={id}>
-        <CloseButton onClick={handleClose}>&times;</CloseButton>
-
-        <ModalContent src={imageObj.image} alt={imageObj.description} />
-
-        <Caption>{imageObj.description}</Caption>
-      </Modal>
-    );
-  }
   interface ImgListProps {
     itemsGallery: ProductsData[];
     handleClick: (event: React.MouseEvent<HTMLImageElement>) => void;
