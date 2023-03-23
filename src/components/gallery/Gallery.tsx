@@ -1,10 +1,10 @@
-import { Main } from '../home/Home.styled.js';
+import { Main } from '../home/Home.styled';
 import { GalleryListColumn, GalleryListRow, DirectionBtn } from './Gallery.styled';
 import Typed from 'react-typed';
 import { FaExpandArrowsAlt } from 'react-icons/fa';
-import { useToggle } from '../hooks/customHooks';
+import { useToggle } from '../../hooks/customToggle';
 import { Breakpoint } from 'react-socks';
-import { DarkModeContext } from '../context/DarkModeContext';
+import { DarkModeContext } from '../../context/DarkModeContext';
 import React, { useContext } from 'react';
 import GalleryPhotosComponent from './GalleryPhotos';
 

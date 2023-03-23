@@ -6,10 +6,10 @@ import {
   SportbarMain,
   ProductCard,
 } from './SportbarGallery.styled';
-import { DarkModeContext } from '../context/DarkModeContext';
+import { DarkModeContext } from '../../context/DarkModeContext';
 import ButtonsList from './Buttons';
 import type ProductsData from '@entities/SportBarData';
-import './SportbarModal.styled.js';
+import './SportbarModal.styled';
 import ImageModal from './ImgModal';
 
 const GalleryReact: React.FC = () => {

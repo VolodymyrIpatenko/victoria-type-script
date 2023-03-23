@@ -1,13 +1,13 @@
 import React, { useState, useContext, ChangeEvent } from 'react';
 import Modal from '../modal/Modal';
 import validator from 'validator';
-import sendEmail from './SubmitFunction';
-import { DarkModeContext } from '../context/DarkModeContext';
-import { useToggle } from '../hooks/customHooks';
+import sendEmail from '../../utils/SubmitFunction';
+import { DarkModeContext } from '../../context/DarkModeContext';
+import { useToggle } from '../../hooks/customToggle';
 import {
   MyForm,
   ButtonSubmit,
-  Textarea,
+  MessageField,
   Input,
   LabelText,
   FormWrapper,
@@ -82,13 +82,13 @@ const Contacts: React.FC = () => {
               placeholder="Ваш номер телефону"
               name="phone"
               value={phone}
-              maxLength="12"
+              maxLength={12}
               onChange={validatePhoneNumber}
             />
           </LabelText>
           <LabelText>
             <p>Повідомлення</p>
-            <Textarea
+            <MessageField
               placeholder="Напишіть своє повідомлення"
               onChange={handleChange}
               name="message"

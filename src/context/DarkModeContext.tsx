@@ -6,6 +6,7 @@ interface DarkModeContextType {
 
 export const DarkModeContext = createContext<DarkModeContextType>({
   darkMode: false,
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   toggleDarkMode: () => {},
 });
 
@@ -30,11 +31,9 @@ function DarkModeProvider({ children }: DarkModeProviderProps) {
   }
 
   return (
-    <div>
-      <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
-        {children}
-      </DarkModeContext.Provider>
-    </div>
+    <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
+      {children}
+    </DarkModeContext.Provider>
   );
 }
 

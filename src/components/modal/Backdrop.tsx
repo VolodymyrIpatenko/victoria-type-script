@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import ReactDOM from 'react-dom';
-import { Backdrop } from './Modal.styled.js';
+import { Backdrop } from './Modal.styled';
 
 interface BackdropProps {
   children: ReactNode;

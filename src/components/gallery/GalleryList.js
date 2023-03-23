@@ -1,7 +1,6 @@
 const mainGallery = [
   {
-    photo:
-      'https://volodymyripatenko.github.io/victoria-react/another-bikes.jpeg',
+    photo: 'https://volodymyripatenko.github.io/victoria-react/another-bikes.jpeg',
     alt: 'Cooper arch',
   },
   {

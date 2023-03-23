@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { BreakpointProvider } from 'react-socks';
 import { BrowserRouter } from 'react-router-dom';
-import reportWebVitals from './reportWebVitals';
-import DarkModeProvider from './components/context/DarkModeContext';
+import DarkModeProvider from './context/DarkModeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
@@ -18,5 +17,3 @@ root.render(
     </DarkModeProvider>
   </React.StrictMode>,
 );
-
-reportWebVitals();

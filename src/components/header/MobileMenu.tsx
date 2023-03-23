@@ -1,6 +1,6 @@
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { NavigationLink, MobileMenu } from './Header.styled';
-import { useToggle } from '../hooks/customHooks';
+import { useToggle } from '../../hooks/customToggle';
 import { LogoImg } from './Header.styled';
 import { Breakpoint } from 'react-socks';
 import SwitchMode from '../switch-btn/LightSwitch';

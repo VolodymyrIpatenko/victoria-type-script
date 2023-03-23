@@ -36,8 +36,7 @@ export const CloseButton = styled.span`
   font-weight: bold;
   transition: 0.3s;
 
-  &:hover,
-  &:focus {
+  &:is(:hover, :focus) {
     animation: ${spin} 1s;
     text-decoration: none;
     cursor: pointer;

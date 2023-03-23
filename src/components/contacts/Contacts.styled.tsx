@@ -43,7 +43,7 @@ export const ButtonSubmit = styled.button`
   }
 `;
 
-export const Textarea = styled.textarea`
+export const MessageField = styled.input`
   width: 300px;
   height: 120px;
   padding: 5px;

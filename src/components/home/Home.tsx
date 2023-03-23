@@ -1,6 +1,6 @@
 import { Main, Title, VideoStyle } from './Home.styled';
 import Slider from '../slider/Slider';
-import { DarkModeContext } from '../context/DarkModeContext';
+import { DarkModeContext } from '../../context/DarkModeContext';
 import CoachesList from './CoachesList';
 import React, { useContext } from 'react';
 import videoBg from '../assets/videoBg.mp4';

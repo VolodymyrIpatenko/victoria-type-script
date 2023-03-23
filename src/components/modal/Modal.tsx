@@ -1,5 +1,5 @@
 import Backdrop from './Backdrop';
-import './Modal.styled.js';
+import './Modal.styled';
 import { ReactNode } from 'react';
 
 interface ModalProps {
