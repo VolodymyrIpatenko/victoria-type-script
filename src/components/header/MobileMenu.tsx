@@ -5,7 +5,7 @@ import { LogoImg } from './Header.styled';
 import { Breakpoint } from 'react-socks';
 import SwitchMode from '../switch-btn/LightSwitch';
 import SocialComponent from './SocialsComponent';
-import navigation from '../common/Navigation';
+import navigation from '../../common/navigation/Navigation';
 import { Link } from 'react-router-dom';
 
 export default function MobileMenuComponent() {

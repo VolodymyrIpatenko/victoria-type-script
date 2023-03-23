@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import mainGallery from './GalleryList.js';
+import mainGallery from '../../common/data/GalleryList';
 import type GalleryData from '@entities/GalleryData';
 
 const GalleryPhotosComponent = () => {

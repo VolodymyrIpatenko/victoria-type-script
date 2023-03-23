@@ -1,4 +1,6 @@
-const coachData = [
+import CoachData from '../../entities/CoachData';
+
+const coachData: CoachData[] = [
   {
     photo: 'https://volodymyripatenko.github.io/victoria-react/denis.jpg',
     alt: 'Наш тренер',

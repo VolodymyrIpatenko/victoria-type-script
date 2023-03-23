@@ -1,4 +1,6 @@
-const mainGallery = [
+import GalleryData from '../../entities/GalleryData';
+
+const mainGallery: GalleryData[] = [
   {
     photo: 'https://volodymyripatenko.github.io/victoria-react/another-bikes.jpeg',
     alt: 'Cooper arch',

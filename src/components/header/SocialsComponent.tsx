@@ -1,5 +1,5 @@
 import React from 'react';
-import socialsList from '../common/SocialsList';
+import socialsList from '../../common/socials/SocialsList';
 import { IconsList, Icon } from './Header.styled';
 
 const SocialComponent = (): JSX.Element => {

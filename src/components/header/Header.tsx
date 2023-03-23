@@ -2,7 +2,7 @@ import { Outlet, Link } from 'react-router-dom';
 import { Header, NavigationLink, Nav, Wrap, LogoImg, NavList } from './Header.styled';
 import MobileMenuComponent from './MobileMenu';
 import SocialComponent from './SocialsComponent';
-import navigation from '../common/Navigation';
+import navigation from '../../common/navigation/Navigation';
 
 const HeaderComponent: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import Menu from './data';
+import Menu from '../../common/data/SportbarData';
 import {
   ProductsGallery,
   ProductsGalleryItem,

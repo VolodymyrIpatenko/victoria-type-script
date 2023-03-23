@@ -1,7 +1,8 @@
-const Menu = [
+import ProductsData from '../../entities/SportBarData';
+
+const Menu: ProductsData[] = [
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/second-geyner.jpg',
+    image: 'https://volodymyripatenko.github.io/victoria-react/second-geyner.jpg',
     category: 'Гейнер',
     price: '₴ 55',
     description: 'Гейнер Scitec Nutrition Jumbo',
@@ -22,21 +23,17 @@ const Menu = [
     id: 2,
   },
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/second-pred-tren.jpg',
-
+    image: 'https://volodymyripatenko.github.io/victoria-react/second-pred-tren.jpg',
     category: 'Предтреніки',
     price: '₴ 35',
     description: 'WORK IT LADY',
     id: 3,
   },
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/second-power-pro-new.jpg',
+    image: 'https://volodymyripatenko.github.io/victoria-react/second-power-pro-new.jpg',
     category: 'Батончики',
     price: '₴ 45',
-    description:
-      'Горіховий батончик Power Pro 36%.В батончиках міститься: 36% протеїну',
+    description: 'Горіховий батончик Power Pro 36%.В батончиках міститься: 36% протеїну',
     id: 4,
   },
 
@@ -48,54 +45,43 @@ const Menu = [
     id: 5,
   },
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/second-zero-one.jpg',
-    name: 'Zero one Crunch',
+    image: 'https://volodymyripatenko.github.io/victoria-react/second-zero-one.jpg',
     category: 'Батончики',
     price: '₴ 45',
-    description:
-      'Zero Crunch 40% Protein Високий вміст білка 40% ідеально доповнює раціон',
+    description: 'Zero Crunch 40% Protein Високий вміст білка 40% ідеально доповнює раціон',
     id: 6,
   },
   {
     image: 'https://volodymyripatenko.github.io/victoria-react/zero-one.jpg',
-    name: 'Zero One',
     category: 'Батончики',
     price: '₴ 45',
-    description:
-      'Протеїнові батончики торгової марки Sporter.Високий вміст білка (32%)',
+    description: 'Протеїнові батончики торгової марки Sporter.Високий вміст білка (32%)',
     id: 7,
   },
 
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/newBar/amino-first.jpeg',
+    image: 'https://volodymyripatenko.github.io/victoria-react/newBar/amino-first.jpeg',
     category: 'Амінокислоти',
     price: '₴ 35',
     description: 'Essential AMIN.O.  Energy від Optimum Nutrition',
     id: 8,
   },
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/newBar/amino-second.jpeg',
+    image: 'https://volodymyripatenko.github.io/victoria-react/newBar/amino-second.jpeg',
     category: 'Амінокислоти',
     price: '₴ 35',
     description: 'Essential AMIN.O.  Energy від Optimum Nutrition',
     id: 9,
   },
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/newBar/amino-third.jpeg',
-    name: 'Maggi',
+    image: 'https://volodymyripatenko.github.io/victoria-react/newBar/amino-third.jpeg',
     category: 'Амінокислоти',
     price: '₴ 35',
     description: 'Essential AMIN.O.  Energy від Optimum Nutrition ',
     id: 10,
   },
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/newBar/amino-fourth.jpeg',
-    name: 'Maggi',
+    image: 'https://volodymyripatenko.github.io/victoria-react/newBar/amino-fourth.jpeg',
     category: 'Амінокислоти',
     price: '₴ 35',
     description: 'Essential AMIN.O.  Energy від Optimum Nutrition',
@@ -103,18 +89,14 @@ const Menu = [
   },
 
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/newBar/bcaa-second.jpeg',
-    name: 'Maggi',
+    image: 'https://volodymyripatenko.github.io/victoria-react/newBar/bcaa-second.jpeg',
     category: 'Амінокислоти',
     price: '₴ 20',
     description: '',
     id: 12,
   },
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/newBar/pro-second.jpeg',
-    name: 'Maggi',
+    image: 'https://volodymyripatenko.github.io/victoria-react/newBar/pro-second.jpeg',
     category: 'Батончики',
     price: '₴ 45',
     description: 'Батончик Power Pro 36%.В батончиках міститься: 36% протеїну',
@@ -130,8 +112,7 @@ const Menu = [
     id: 14,
   },
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/newBar/zero-fifth.jpeg',
+    image: 'https://volodymyripatenko.github.io/victoria-react/newBar/zero-fifth.jpeg',
 
     category: 'Батончики',
     price: '₴ 45',
@@ -139,8 +120,7 @@ const Menu = [
     description: 'Батончик Zero One 32%.В батончиках міститься: 32% протеїну',
   },
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/newBar/zero-first.jpeg',
+    image: 'https://volodymyripatenko.github.io/victoria-react/newBar/zero-first.jpeg',
 
     category: 'Батончики',
     price: '₴ 45',
@@ -148,8 +128,7 @@ const Menu = [
     description: 'Батончик Zero One 32%.В батончиках міститься: 32% протеїну',
   },
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/newBar/zero-fourth.jpeg',
+    image: 'https://volodymyripatenko.github.io/victoria-react/newBar/zero-fourth.jpeg',
 
     category: 'Батончики',
     price: '₴ 45',
@@ -157,8 +136,7 @@ const Menu = [
     description: 'Батончик Zero One 32%.В батончиках міститься: 32% протеїну',
   },
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/newBar/zero-second.jpeg',
+    image: 'https://volodymyripatenko.github.io/victoria-react/newBar/zero-second.jpeg',
 
     category: 'Батончики',
     price: '₴ 45',
@@ -166,8 +144,7 @@ const Menu = [
     description: 'Батончик Zero One 32%.В батончиках міститься: 32% протеїну',
   },
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/newBar/zero-sixth.jpeg',
+    image: 'https://volodymyripatenko.github.io/victoria-react/newBar/zero-sixth.jpeg',
 
     category: 'Батончики',
     price: '₴ 45',
@@ -175,8 +152,7 @@ const Menu = [
     description: 'Батончик Zero One 32%.В батончиках міститься: 32% протеїну',
   },
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/newBar/pred-tren.jpeg',
+    image: 'https://volodymyripatenko.github.io/victoria-react/newBar/pred-tren.jpeg',
 
     category: 'Предтреніки',
     price: '₴ 35',
@@ -184,8 +160,7 @@ const Menu = [
     description: 'Genius Nutrition Warcry',
   },
   {
-    image:
-      'https://volodymyripatenko.github.io/victoria-react/newBar/scitec-prot.jpeg',
+    image: 'https://volodymyripatenko.github.io/victoria-react/newBar/scitec-prot.jpeg',
     category: 'Протеїнові коктейлі',
     price: '₴ 60',
     id: 21,

@@ -1,7 +1,7 @@
 import { Coaches, CoachDescription, CoachName } from './Home.styled';
 import React, { useState } from 'react';
 import { Breakpoint } from 'react-socks';
-import coachData from './coach';
+import coachData from '../../common/data/Coach.Data';
 import type CoachData from '@entities/CoachData';
 import './coach.css';
 import { nanoid } from 'nanoid';
