@@ -22,8 +22,8 @@ const Contacts: React.FC = () => {
     message: '',
   });
 
-  const [email, setEmailError] = useState('');
-  const [phone, setPhoneNumber] = useState('');
+  const [email, setEmailError] = useState<string>('');
+  const [phone, setPhoneNumber] = useState<string>('');
   const [isModalOpen, setModalOpen] = useToggle();
   const { message, name } = data;
 
