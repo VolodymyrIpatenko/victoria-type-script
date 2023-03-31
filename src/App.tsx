@@ -1,10 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
-// import Contacts from './components/contacts/Contacts';
-// import Home from './components/home/Home';
-// import Gallery from './components/gallery/Gallery';
-// import SharedLayout from './components/layout/Layout';
-// import GalleryReact from './components/sportbar/Sportbar';
 import './mode.css';
 import GlobalStyle from './Global.styled';
 
