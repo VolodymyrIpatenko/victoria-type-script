@@ -3,7 +3,7 @@ import Slider from '../slider/Slider';
 import { DarkModeContext } from '../../context/DarkModeContext';
 import CoachesList from './CoachesList';
 import React, { useContext } from 'react';
-import videoBg from '../assets/videoBg.mp4';
+import videoBg from '../assets/victoria.mp4';
 import { Player } from 'video-react';
 import 'video-react/dist/video-react.css';
 import HomeComponent from './HomeDesktopDescription';

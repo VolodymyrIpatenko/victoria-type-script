@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import mainGallery from '../../common/data/GalleryList';
 import type GalleryData from '@entities/GalleryData';
+import { nanoid } from 'nanoid';
+const id = nanoid();
 
 const GalleryPhotosComponent = () => {
   const [data, setData] = useState<GalleryData[]>(mainGallery);
@@ -8,7 +10,7 @@ const GalleryPhotosComponent = () => {
     <>
       {data.map(({ photo, alt }) => {
         return (
-          <li>
+          <li key={id}>
             <img src={photo} alt={alt} loading="lazy" />
           </li>
         );
