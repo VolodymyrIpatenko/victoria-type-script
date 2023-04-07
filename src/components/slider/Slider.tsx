@@ -17,7 +17,7 @@ const SliderComponent: React.FC = () => {
   return (
     <Wrraper>
       <h2>Абонементи та графік роботи</h2>
-      <Slider  {...settings}>
+      <Slider {...settings}>
         <div>
           <h3>Режим роботи</h3>
           <p>Пн.-Пт. 8:00-21:30</p>

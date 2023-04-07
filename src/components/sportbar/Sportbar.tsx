@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import Menu from '../../common/data/SportbarData';
+import { ContentDark, ContentLight } from '../../Mode.styled';
 import {
   ProductsGallery,
   ProductsGalleryItem,
@@ -16,6 +17,8 @@ const GalleryReact: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [items, setItems] = useState<ProductsData[]>(Menu);
   const { darkMode } = useContext(DarkModeContext);
+
+  const Theme = darkMode ? ContentDark : ContentLight;
 
   function handleImageClick(event: React.MouseEvent<HTMLImageElement>) {
     setSelectedImage(parseInt(event.currentTarget.id));
@@ -54,7 +57,7 @@ const GalleryReact: React.FC = () => {
   }
 
   return (
-    <div className={darkMode ? `Content-dark` : `Content-light`}>
+    <Theme>
       <SportbarMain>
         <section>
           <ButtonsList filterItem={filterItem} />
@@ -65,7 +68,7 @@ const GalleryReact: React.FC = () => {
           )}
         </section>
       </SportbarMain>
-    </div>
+    </Theme>
   );
 };
 

@@ -7,6 +7,7 @@ import { Breakpoint } from 'react-socks';
 import { DarkModeContext } from '../../context/DarkModeContext';
 import React, { useContext } from 'react';
 import GalleryPhotosComponent from './GalleryPhotos';
+import { ContentDark, ContentLight } from '../../Mode.styled';
 
 const titleStyle = {
   title: {
@@ -26,8 +27,9 @@ const Gallery: React.FC = () => {
   const GalleryDirection = row ? GalleryListColumn : GalleryListRow;
   const { darkMode } = useContext(DarkModeContext);
 
+  const Theme = darkMode ? ContentDark : ContentLight;
   return (
-    <div className={darkMode ? `Content-dark` : `Content-light`}>
+    <Theme>
       <Main>
         <Typed
           style={titleStyle.title}
@@ -56,7 +58,7 @@ const Gallery: React.FC = () => {
           <GalleryPhotosComponent />
         </GalleryDirection>
       </Main>
-    </div>
+    </Theme>
   );
 };
 

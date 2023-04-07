@@ -14,6 +14,7 @@ import {
   ModalContacts,
   ContactsBackdrop,
 } from './Contacts.styled';
+import { ContentDark, ContentLight } from '../../Mode.styled';
 
 const Contacts: React.FC = () => {
   const { darkMode } = useContext(DarkModeContext);
@@ -21,6 +22,7 @@ const Contacts: React.FC = () => {
     name: '',
     message: '',
   });
+  const Theme = darkMode ? ContentDark : ContentLight;
 
   const [email, setEmailError] = useState<string>('');
   const [phone, setPhoneNumber] = useState<string>('');
@@ -55,7 +57,7 @@ const Contacts: React.FC = () => {
   };
 
   return (
-    <div className={darkMode ? `Content-dark` : `Content-light`}>
+    <Theme>
       <FormWrapper>
         <MyForm onSubmit={sendEmail}>
           <h1>Напишіть нам</h1>
@@ -112,7 +114,7 @@ const Contacts: React.FC = () => {
           ) : null}
         </MyForm>
       </FormWrapper>
-    </div>
+    </Theme>
   );
 };
 

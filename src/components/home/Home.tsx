@@ -8,6 +8,7 @@ import { Player } from 'video-react';
 import 'video-react/dist/video-react.css';
 import HomeComponent from './HomeDesktopDescription';
 import MobileHomeComponent from './HomeMobileDescription';
+import { ContentDark, ContentLight } from '../../Mode.styled';
 
 export const titleStyle = {
   title: {
@@ -22,8 +23,9 @@ export const titleStyle = {
 
 const Home: React.FC = () => {
   const { darkMode } = useContext(DarkModeContext);
+  const Theme = darkMode ? ContentDark : ContentLight;
   return (
-    <div className={darkMode ? `Content-dark` : `Content-light`}>
+    <Theme>
       <Main>
         <VideoStyle>
           <Player src={videoBg} />
@@ -36,7 +38,7 @@ const Home: React.FC = () => {
           <CoachesList />
         </section>
       </Main>
-    </div>
+    </Theme>
   );
 };
 

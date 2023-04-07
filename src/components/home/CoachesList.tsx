@@ -1,11 +1,11 @@
-import { Coaches, CoachDescription, CoachName } from './Home.styled';
+import { Coaches, CoachDescription, CoachesDescription } from './Home.styled';
 import React, { useState } from 'react';
-import { Breakpoint } from 'react-socks';
 import coachData from '../../common/data/Coach.Data';
 import type CoachData from '@entities/CoachData';
-import './coach.css';
 import { nanoid } from 'nanoid';
 const id = nanoid();
+import '@fremtind/jkl-core/core.min.css';
+import Observer from '../../utils/Observer';
 
 const CoachesList: React.FC = () => {
   const [data, _] = useState<CoachData[]>(coachData);
@@ -14,20 +14,17 @@ const CoachesList: React.FC = () => {
       {data.map(({ photo, alt, description, name }) => {
         return (
           <>
-            <CoachName>{name}</CoachName>
-            <li key={id} className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
+            <li key={id}>
+              <div>
+                <div>
                   <img src={photo} alt={alt} width="300" height="200" />
-                  <Breakpoint small down>
+                </div>
+                <Observer>
+                  <CoachesDescription>
                     <h2>{name}</h2>
-                    <p>{description}</p>
-                  </Breakpoint>
-                </div>
-                <div className="flip-card-back">
-                  <h1>{name}</h1>
-                  <CoachDescription>{description}</CoachDescription>
-                </div>
+                    <CoachDescription>{description}</CoachDescription>
+                  </CoachesDescription>
+                </Observer>
               </div>
             </li>
           </>

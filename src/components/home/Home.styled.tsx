@@ -28,18 +28,14 @@ export const Coaches = styled.ul`
   }
 `;
 
+export const CoachesDescription = styled.div`
+  max-width: 300px;
+`;
+
 export const CoachDescription = styled.p`
   padding: 10px;
   text-align: left;
   line-height: 28px;
-`;
-
-export const CoachName = styled.h2`
-  display: none;
-  @media screen and (min-width: 1199px) {
-    margin-top: 100px;
-    display: block;
-  }
 `;
 
 export const HomeSection = styled.section`

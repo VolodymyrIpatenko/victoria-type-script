@@ -61,14 +61,14 @@ export const MobileMenu = styled.ul`
 export const NavigationLink = styled(Link)`
   padding: 4px 7px;
   position: relative;
-  transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  // transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   font-size: 30px;
   border-radius: 7px;
-  color: #ffffff;
-  &:is(:hover, :active) {
-    color: #2196f3;
-  }
+  // color: #ffffff;
+  // &:is(:hover, :active) {
+  //   color: #2196f3;
+  // }
   @media screen and (max-width: 768px) {
     font-size: 20px;
   }
