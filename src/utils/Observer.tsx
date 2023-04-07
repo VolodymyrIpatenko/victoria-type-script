@@ -1,11 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { useIntersectionObserver } from '@fremtind/jkl-react-hooks';
-import {
-  Target,
-  // TargetIntersect,
-  // TargetNotIntersect,
-  // DivWithIntersectProp, // new type
-} from './Observer.styled';
+import { Target } from './Observer.styled';
 
 interface ObserverProps {
   children: React.ReactNode;
