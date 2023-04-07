@@ -1,6 +1,6 @@
 import { Coaches, CoachDescription, CoachesDescription } from './Home.styled';
 import React, { useState } from 'react';
-import coachData from '../../common/data/Coach.Data';
+import coachData from '../../common/data/CoachData';
 import type CoachData from '@entities/CoachData';
 import { nanoid } from 'nanoid';
 const id = nanoid();
