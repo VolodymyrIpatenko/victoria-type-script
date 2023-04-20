@@ -9,7 +9,6 @@ interface Props {
 }
 
 const ButtonsList = React.memo(({ filterItem }: Props) => {
-  console.log('buttons render');
   const buttons = [
     'Амінокислоти',
     'Батончики',
