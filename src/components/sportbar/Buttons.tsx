@@ -1,14 +1,15 @@
+import React from 'react';
 import { ProductsVariety, CategoryButton } from './SportbarGallery.styled';
 import { v4 as uuid } from 'uuid';
-
 const id = uuid();
-type FilterItem = (arg: string) => void;
 
+type FilterItem = (arg: string) => void;
 interface Props {
   filterItem: FilterItem;
 }
 
-const ButtonsList = ({ filterItem }: Props) => {
+const ButtonsList = React.memo(({ filterItem }: Props) => {
+  console.log('buttons render');
   const buttons = [
     'Амінокислоти',
     'Батончики',
@@ -28,6 +29,6 @@ const ButtonsList = ({ filterItem }: Props) => {
       ))}
     </ProductsVariety>
   );
-};
+});
 
 export default ButtonsList;

@@ -11,6 +11,7 @@ interface ImageModalProps {
 }
 
 export default function ImageModal({ imageObj, handleClose }: ImageModalProps): JSX.Element {
+  console.log('modal render');
   return (
     <Modal key={id}>
       <CloseButton onClick={handleClose}>&times;</CloseButton>

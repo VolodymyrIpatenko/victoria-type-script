@@ -15,17 +15,13 @@ const CoachesList: React.FC = () => {
         return (
           <>
             <li key={id}>
-              <div>
-                <div>
-                  <img src={photo} alt={alt} width="300" height="200" />
-                </div>
-                <Observer>
-                  <CoachesDescription>
-                    <h2>{name}</h2>
-                    <CoachDescription>{description}</CoachDescription>
-                  </CoachesDescription>
-                </Observer>
-              </div>
+              <img src={photo} alt={alt} width="300" height="200" />
+              <Observer>
+                <CoachesDescription>
+                  <h2>{name}</h2>
+                  <CoachDescription>{description}</CoachDescription>
+                </CoachesDescription>
+              </Observer>
             </li>
           </>
         );

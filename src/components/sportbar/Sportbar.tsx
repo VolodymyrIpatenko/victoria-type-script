@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useCallback } from 'react';
 import Menu from '../../common/data/SportbarData';
 import { ContentDark, ContentLight } from '../../Mode.styled';
 import {
@@ -20,31 +20,36 @@ const GalleryReact: React.FC = () => {
 
   const Theme = darkMode ? ContentDark : ContentLight;
 
-  function handleImageClick(event: React.MouseEvent<HTMLImageElement>) {
-    setSelectedImage(parseInt(event.currentTarget.id));
-  }
+  const handleImageClick = useCallback(
+    (event: React.MouseEvent<HTMLImageElement>) => {
+      setSelectedImage(parseInt(event.currentTarget.id));
+    },
+    [setSelectedImage],
+  );
 
   function handleModalClose() {
     setSelectedImage(null);
   }
-
-  const filterItem = (categItem: string) => {
-    if (categItem === 'Все') {
-      return setItems(Menu);
-    }
-    const updatedItems = Menu.filter(({ category }) => category === categItem);
-    setItems(updatedItems);
-  };
+  const filterItem = useCallback(
+    (categItem: string) => {
+      if (categItem === 'Все') {
+        return setItems(Menu);
+      }
+      const updatedItems = Menu.filter(({ category }) => category === categItem);
+      setItems(updatedItems);
+    },
+    [setItems],
+  );
   interface ImgListProps {
     itemsGallery: ProductsData[];
     handleClick: (event: React.MouseEvent<HTMLImageElement>) => void;
   }
 
-  function ProductsGalleryList({ itemsGallery, handleClick }: ImgListProps): JSX.Element {
+  const ProductsGalleryList = React.memo(({ itemsGallery, handleClick }: ImgListProps) => {
     return (
       <ProductsGallery>
-        {items.map(({ image, price, description }, index) => (
-          <ProductsGalleryItem>
+        {itemsGallery.map(({ image, price, description }, index) => (
+          <ProductsGalleryItem key={index}>
             <img id={String(index)} src={image} alt={description} onClick={handleClick} />
             <ProductCard>
               <p>{price}</p>
@@ -54,7 +59,7 @@ const GalleryReact: React.FC = () => {
         ))}
       </ProductsGallery>
     );
-  }
+  });
 
   return (
     <Theme>
