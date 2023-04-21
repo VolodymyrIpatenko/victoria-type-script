@@ -2,10 +2,10 @@ import { Coaches, CoachDescription, CoachesDescription } from './Home.styled';
 import React, { useState } from 'react';
 import coachData from '../../common/data/CoachData';
 import type CoachData from '@entities/CoachData';
-import { nanoid } from 'nanoid';
-const id = nanoid();
 import '@fremtind/jkl-core/core.min.css';
 import Observer from '../../utils/Observer';
+import { nanoid } from 'nanoid';
+const id = nanoid();
 
 const CoachesList: React.FC = () => {
   const [data, _] = useState<CoachData[]>(coachData);

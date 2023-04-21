@@ -1,17 +1,13 @@
 import React, { useState, useContext, useCallback } from 'react';
 import Menu from '../../common/data/SportbarData';
 import { ContentDark, ContentLight } from '../../Mode.styled';
-import {
-  ProductsGallery,
-  ProductsGalleryItem,
-  SportbarMain,
-  ProductCard,
-} from './SportbarGallery.styled';
+import { SportbarMain } from './SportbarGallery.styled';
 import { DarkModeContext } from '../../context/DarkModeContext';
 import ButtonsList from './Buttons';
 import type ProductsData from '@entities/SportBarData';
 import './SportbarModal.styled';
 import ImageModal from './ImgModal';
+import ProductsGalleryList from './ProductsGallery';
 
 const GalleryReact: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -40,26 +36,6 @@ const GalleryReact: React.FC = () => {
     },
     [setItems],
   );
-  interface ImgListProps {
-    itemsGallery: ProductsData[];
-    handleClick: (event: React.MouseEvent<HTMLImageElement>) => void;
-  }
-
-  const ProductsGalleryList = React.memo(({ itemsGallery, handleClick }: ImgListProps) => {
-    return (
-      <ProductsGallery>
-        {itemsGallery.map(({ image, price, description }, index) => (
-          <ProductsGalleryItem key={index}>
-            <img id={String(index)} src={image} alt={description} onClick={handleClick} />
-            <ProductCard>
-              <p>{price}</p>
-              <p>{description}</p>
-            </ProductCard>
-          </ProductsGalleryItem>
-        ))}
-      </ProductsGallery>
-    );
-  });
 
   return (
     <Theme>
