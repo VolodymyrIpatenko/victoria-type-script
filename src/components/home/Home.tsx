@@ -27,9 +27,9 @@ const Home: React.FC = () => {
   return (
     <Theme>
       <Main>
-        <VideoStyle>
+{/*         <VideoStyle>
           <Player src={videoBg} />
-        </VideoStyle>
+        </VideoStyle> */}
         <MobileHomeComponent />
         <HomeComponent />
         <Slider />
